@@ -26,6 +26,7 @@ import {
   Check,
 } from 'lucide-react';
 import { StoredAuditRecord } from '@/lib/audit-store';
+import { LABEL_AUDIT_GTM, LABEL_MINTA_DEMO, TAUTAN_AUDIT_GTM, TAUTAN_MINTA_DEMO } from '@/config/contact';
 
 interface Props {
   report: StoredAuditRecord;
@@ -375,12 +376,12 @@ export default function ReportView({ report }: Props) {
                 <p className="text-xs text-zinc-400">
                   Perbaikan langsung 3 isu utama yang ditemukan pada audit ini (WhatsApp CTA, Title/H1, dan Core Web Vitals).
                 </p>
-                <div className="text-2xl font-black text-white">
-                  Rp 1.5jt <span className="text-xs text-zinc-500 font-normal">/ satu kali (7–14 hari)</span>
+                <div className="text-sm font-semibold text-zinc-300">
+                  Sekali kerja, 7–14 hari
                 </div>
               </div>
               <a
-                href={waContactUrl('Paket Fix 3 Luka Kritis (Rp 1.5jt)')}
+                href={waContactUrl('Paket Fix 3 Luka Kritis')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs uppercase tracking-wider text-center transition-all cursor-pointer block"
@@ -400,12 +401,12 @@ export default function ReportView({ report }: Props) {
                 <p className="text-xs text-zinc-300">
                   Optimasi Google Maps, LocalBusiness Schema, monitoring ranking kata kunci lokal, dan optimasi landing WhatsApp.
                 </p>
-                <div className="text-2xl font-black text-amber-400">
-                  Rp 3.5jt <span className="text-xs text-zinc-400 font-normal">/ bulan</span>
+                <div className="text-sm font-semibold text-amber-300">
+                  Pendampingan bulanan
                 </div>
               </div>
               <a
-                href={waContactUrl('Paket Retainer Local Dominance (Rp 3.5jt/bln)')}
+                href={waContactUrl('Paket Retainer Local Dominance')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-black font-extrabold text-xs uppercase tracking-wider text-center transition-all shadow-md shadow-amber-500/20 cursor-pointer block"
@@ -422,8 +423,8 @@ export default function ReportView({ report }: Props) {
                 <p className="text-xs text-zinc-400">
                   Dominasi jawaban AI Overview, audit E-E-A-T mendalam, pembuatan programmatic SEO landing pages kota.
                 </p>
-                <div className="text-2xl font-black text-white">
-                  Rp 7.5jt+ <span className="text-xs text-zinc-500 font-normal">/ project</span>
+                <div className="text-sm font-semibold text-zinc-300">
+                  Per proyek
                 </div>
               </div>
               <a
@@ -433,6 +434,31 @@ export default function ReportView({ report }: Props) {
                 className="w-full py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs uppercase tracking-wider text-center transition-all cursor-pointer block"
               >
                 Konsultasi Custom
+              </a>
+            </div>
+          </div>
+          {/* Tanpa harga publik (keputusan Putu 26 Sep 2026): angka paket ada di
+              penawaran. Jalur utama = Audit GTM 30 menit / Minta demo. */}
+          <div className="flex flex-col items-center gap-3 pt-2 text-center">
+            <p className="text-xs text-zinc-400">
+              Biaya tiap paket disampaikan lewat penawaran setelah Audit GTM gratis 30 menit.
+            </p>
+            <div className="flex flex-wrap justify-center gap-3">
+              <a
+                href={TAUTAN_AUDIT_GTM}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-xl bg-amber-400 px-5 py-3 text-xs font-extrabold uppercase tracking-wider text-slate-950 transition-all hover:bg-amber-300"
+              >
+                {LABEL_AUDIT_GTM}
+              </a>
+              <a
+                href={TAUTAN_MINTA_DEMO}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-xl border border-white/20 px-5 py-3 text-xs font-bold uppercase tracking-wider text-white transition-all hover:bg-white/10"
+              >
+                {LABEL_MINTA_DEMO}
               </a>
             </div>
           </div>

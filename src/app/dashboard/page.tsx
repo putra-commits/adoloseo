@@ -42,6 +42,13 @@ const MODULES = [
 export default function Dashboard() {
   return (
     <div className="p-8 lg:p-16 max-w-7xl mx-auto space-y-20 font-sans">
+      {/* Semua angka di halaman ini CONTOH (belum tersambung GSC/GA). Tanpa label,
+          angka rekaan tampil seperti data nyata — melanggar aturan publik
+          "tanpa angka karangan" (26 Sep 2026). */}
+      <div role="note" className="border border-amber-500/40 bg-amber-500/10 px-4 py-3 text-sm font-semibold text-amber-200">
+        Contoh tampilan — semua angka di halaman ini rekaan, bukan data pelanggan.
+      </div>
+
       {/* Hero Section */}
       <header className="relative">
         <div className="absolute -top-24 -left-24 w-64 h-64 bg-amber-600/10 rounded-full blur-3xl" />

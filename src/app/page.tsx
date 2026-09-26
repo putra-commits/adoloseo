@@ -15,7 +15,14 @@ import PhotoSplitSection from './components/photo-split-section';
 import GrowTogetherCta from './components/grow-together-cta';
 import WorkflowOrbit from './components/workflow-orbit';
 import { statementPhoto, comparisonPhoto, ctaPhoto } from '@/config/photos';
-import { waLink } from '@/config/contact';
+import {
+  waLink,
+  LABEL_AUDIT_GTM,
+  LABEL_MINTA_DEMO,
+  TAUTAN_AUDIT_GTM,
+  TAUTAN_GTM,
+  TAUTAN_MINTA_DEMO,
+} from '@/config/contact';
 
 interface AuditResult {
   url: string;
@@ -125,15 +132,15 @@ export default function LandingPage() {
           {/* Kolom kiri */}
           <div>
             <span aria-hidden="true" className="ey-accent-bar mb-5 h-1 w-14 bg-accent" />
-            <p className="section-label text-accent">Pusat Komando Akuisisi</p>
+            <p className="section-label text-accent">AdoloSEO · jalur organik AdoloGTM</p>
             <h1 className="mt-3 font-display text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl xl:text-6xl">
               Website Anda <br />
               <span className="text-gradient">Hanya Jadi Beban Biaya Server?</span>
             </h1>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-slate-300">
-              Berhenti membakar uang untuk Paid Ads berdarah-darah. Biarkan AI kami membedah isi
-              perut website Anda dan membuktikan mengapa kompetitor mencuri 90% pelanggan Anda
-              setiap harinya.
+              SEO adalah jalur organik yang melengkapi iklan: calon pembeli menemukan Anda saat
+              mereka sendiri sedang mencari. Masukkan alamat website Anda — audit gratis di bawah
+              menunjukkan di mana website itu bocor, dengan skor yang bisa Anda cek sendiri.
             </p>
 
             {(testState === "idle" || testState === "error") && (
@@ -161,7 +168,7 @@ export default function LandingPage() {
 
             <p className="mt-4 flex items-center gap-2 text-xs text-slate-400">
               <Shield className="h-4 w-4 shrink-0 text-accent" />
-              Lebih dari 4.200+ pemilik bisnis telah menyadari kebodohan strategi SEO mereka minggu ini.
+              Audit berjalan di browser Anda. Tidak ada kartu kredit, tidak ada laporan yang dikirim otomatis.
             </p>
           </div>
 
@@ -366,7 +373,7 @@ export default function LandingPage() {
                 AI Search Dominance (AEO &amp; GEO)
               </h3>
               <p className="mt-2 text-[15px] leading-relaxed text-slate-400">
-                Pastikan bisnis Anda jadi jawaban utama di ChatGPT &amp; Perplexity.
+                Siapkan website Anda agar dikutip mesin jawab AI seperti ChatGPT.
               </p>
             </div>
 
@@ -397,22 +404,22 @@ export default function LandingPage() {
 
       {/* 5. Comparison Split — Ads vs Ekosistem Organik */}
       <PhotoSplitSection
-        eyebrow="Salesman 24 Jam Non-Stop"
-        headline="Jadikan ChatGPT, Gemini & Siri Sebagai Salesman Anda."
-        body="Berhenti membakar uang untuk Paid Ads. Saatnya membangun aset digital yang bekerja 24 jam sehari, 7 hari seminggu tanpa minta naik gaji. Dengan menguasai SEO, AEO, dan GEO, Anda merekrut algoritma terbesar di dunia untuk menjual produk Anda saat Anda sedang tidur."
+        eyebrow="Organik + iklan, bukan organik vs iklan"
+        headline="Iklan membeli perhatian hari ini. SEO membangun aset yang terus bekerja."
+        body="Go To Market (GTM) yang sehat memakai dua jalur: iklan untuk hasil cepat, dan jalur organik (SEO, AEO, GEO) yang tetap mendatangkan calon pembeli saat kampanye berhenti. AdoloGTM menghitung Rupiah dari keduanya di satu papan, jadi Anda tahu jalur mana yang benar-benar menghasilkan."
         photo={comparisonPhoto}
       >
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
           <div className="rounded-none border border-white/15 bg-black/35 p-4 backdrop-blur-sm">
             <p className="text-base font-semibold text-white">Iklan Berbayar (Ads)</p>
             <p className="mt-1 text-sm text-slate-400">
-              ROI Statis • Biaya Terus Meningkat • Berhenti Saat Saldo Habis
+              Hasil cepat • Terukur per kampanye • Berjalan selama anggaran berjalan
             </p>
           </div>
           <div className="rounded-none border border-accent/40 bg-black/35 p-4 backdrop-blur-sm">
             <p className="text-base font-semibold text-white">Ekosistem SEO, AEO &amp; GEO</p>
             <p className="mt-1 text-sm text-accent">
-              ROI Eksponensial • Bekerja 24 Jam • Dipercaya oleh AI
+              Aset jangka panjang • Bekerja 24 jam • Terbaca mesin jawab AI
             </p>
           </div>
         </div>
@@ -453,8 +460,8 @@ export default function LandingPage() {
           </div>
 
           <div className="absolute left-6 top-6 rounded-none border border-white/15 bg-black/50 p-3 backdrop-blur-sm">
-            <p className="section-label text-accent">Pertumbuhan Kumulatif</p>
-            <p className="font-display text-2xl font-bold text-white">+440%</p>
+            <p className="section-label text-accent">Ilustrasi pola</p>
+            <p className="font-display text-base font-bold text-white">Bukan data pelanggan</p>
           </div>
         </div>
       </PhotoSplitSection>
@@ -466,18 +473,18 @@ export default function LandingPage() {
             {[
               {
                 no: '01',
-                title: 'SEO — Penakluk Google',
-                desc: 'Search Engine Optimization: Menempatkan website Anda di peringkat tertinggi pencarian tradisional Google, menyergap calon pembeli secara organik tepat saat mereka mencari solusi yang Anda tawarkan.',
+                title: 'SEO — ditemukan di Google',
+                desc: 'Search Engine Optimization: membantu website Anda naik di pencarian Google, sehingga calon pembeli menemukan Anda secara organik tepat saat mereka mencari solusi yang Anda tawarkan.',
               },
               {
                 no: '02',
-                title: 'AEO — Penakluk ChatGPT & Gemini',
-                desc: 'Answer Engine Optimization: Mengkondisikan konten Anda agar direkomendasikan sebagai "Jawaban Terbaik Mutlak" saat prospek bertanya kepada Chatbot AI pintar seputar industri Anda.',
+                title: 'AEO — dikutip ChatGPT',
+                desc: 'Answer Engine Optimization: menyusun konten Anda agar mudah dikutip saat calon pembeli bertanya kepada mesin jawab AI seperti ChatGPT seputar industri Anda.',
               },
               {
                 no: '03',
-                title: 'GEO — Penakluk Siri & Voice AI',
-                desc: 'Generative Engine Optimization: Mengoptimasi keberadaan merek Anda agar menjadi rujukan utama saat pengguna melakukan pencarian melalui perangkat suara cerdas dan ekosistem pintar Apple.',
+                title: 'GEO — jadi rujukan AI generatif',
+                desc: 'Generative Engine Optimization: menyiapkan data merek Anda agar dijadikan rujukan oleh mesin jawab AI dan asisten suara saat pengguna mencari dengan bahasa sehari-hari.',
               },
             ].map((item) => (
               <div
@@ -500,13 +507,13 @@ export default function LandingPage() {
       <section id="arsenal" className="scroll-mt-24 bg-ink py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <span aria-hidden="true" className="ey-accent-bar mb-4 h-1 w-14 bg-accent" />
-          <p className="section-label text-accent">Sovereign Arsenal</p>
+          <p className="section-label text-accent">Fitur AdoloSEO</p>
           <h2 className="mt-2 font-display text-3xl font-bold tracking-tight text-white sm:text-5xl">
-            Bukan Sekadar Alat, Ini Senjata Pemusnah Massal Kompetitor.
+            Sepuluh pemeriksaan untuk tim yang serius dengan pencarian.
           </h2>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-300">
-            10 Fitur Enterprise-grade yang didesain bukan untuk orang awam, melainkan untuk para
-            dominator pasar yang siap mengambil alih pangsa pencarian secara brutal.
+            Dari kesehatan teknis sampai kesiapan untuk mesin jawab AI — dikelompokkan dalam tiga
+            pilar supaya tim tahu apa yang diperbaiki lebih dulu.
           </p>
 
           {PILLARS.map((pillar) => (
@@ -525,12 +532,10 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* 8. Pricing */}
-      {/* Bekas section harga. AdoloSEO TIDAK menjual langganan.
-          Alasannya ada di komentar kepala berkas patch dan di PR: mesin ini
-          belum punya Tenant/User/Subscription, jadi langganan tidak bisa
-          ditagih maupun dibatasi; dan jasapromo.id sudah menjual SEO dikelola
-          dengan mesin yang sama. Auditnya gratis, penutupnya lewat jasapromo. */}
+      {/* 8. Setelah audit — TANPA harga publik (keputusan Putu 26 Sep 2026).
+          AdoloSEO tidak menjual langganan (mesin belum punya Tenant/User/
+          Subscription). Pengerjaan oleh tim masuk lewat AdoloGTM: CTA
+          "Audit GTM 30 menit" / "Minta demo"; angka hanya di proposal. */}
       <section id="layanan" className="relative scroll-mt-24 overflow-hidden bg-ink-900 py-16 sm:py-20">
         <div aria-hidden="true" className="pointer-events-none absolute left-1/2 top-1/3 h-[28rem] w-[28rem] -translate-x-1/2 rounded-full bg-brand-600/12 blur-3xl" />
 
@@ -577,18 +582,15 @@ export default function LandingPage() {
               </button>
             </div>
 
-            {/* Kartu 2: dikerjakan tim, lewat jasapromo */}
+            {/* Kartu 2: dikerjakan tim, lewat AdoloGTM */}
             <div className="card-lift flex flex-col rounded-2xl border border-amber-400/40 bg-ink p-7">
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-400/15 text-amber-300">
                 <TrendingUp className="h-6 w-6" />
               </div>
               <h3 className="mt-5 font-display text-xl font-bold text-white">Dikerjakan Tim</h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-400">
-                Layanan SEO dikelola oleh JasaPromo &mdash; memakai mesin audit yang sama
-                dengan halaman ini.
-              </p>
-              <p className="mt-6 font-display text-3xl font-bold text-white">
-                mulai Rp 1.000.000<span className="ml-1 text-base font-normal text-slate-400">/bulan</span>
+                Jalur organik dikerjakan tim Adolo sebagai bagian dari AdoloGTM &mdash; memakai
+                mesin audit yang sama dengan halaman ini. Biaya disusun setelah Audit GTM.
               </p>
               <ul className="mt-6 flex-1 space-y-3 text-sm text-slate-300">
                 {[
@@ -604,18 +606,35 @@ export default function LandingPage() {
                 ))}
               </ul>
               <a
-                href="https://jasapromo.id/layanan/seo"
+                href={TAUTAN_AUDIT_GTM}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-8 flex w-full items-center justify-center gap-2 rounded-none bg-amber-400 py-3.5 text-sm font-bold uppercase tracking-wide text-slate-950 transition hover:bg-amber-300"
               >
-                Lihat Paket JasaPromo <ArrowRight className="h-4 w-4" />
+                {LABEL_AUDIT_GTM} <ArrowRight className="h-4 w-4" />
+              </a>
+              <a
+                href={TAUTAN_MINTA_DEMO}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 flex w-full items-center justify-center gap-2 rounded-none border border-white/25 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+              >
+                {LABEL_MINTA_DEMO}
               </a>
             </div>
           </div>
 
           <p className="mt-8 text-sm text-slate-400">
-            Kebutuhan berskala besar atau butuh penanganan lintas kanal?{' '}
+            Ingin melihat semua kanal &mdash; iklan, SEO, WhatsApp &mdash; dalam Rupiah?{' '}
+            <a
+              href={TAUTAN_GTM}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white underline underline-offset-4 transition hover:text-accent"
+            >
+              Lihat AdoloGTM
+            </a>
+            {' '}atau{' '}
             <a
               href={waLink('Halo Tim Adolo, saya baru menjalankan audit di seo.adolo.id dan kebutuhan saya berskala besar. Mohon dibantu.')}
               target="_blank"
@@ -631,17 +650,27 @@ export default function LandingPage() {
 
       {/* 9. Final CTA */}
       <GrowTogetherCta
-        eyebrow="Kedaulatan Digital"
-        headline="Siap Mendominasi Pencarian AI?"
-        body="Berhenti membiarkan kompetitor mencuri calon pembeli Anda. Bangun kedaulatan digital yang bekerja 24 jam penuh tanpa henti."
+        eyebrow="Audit GTM gratis"
+        headline="Mulai dari angka Anda sendiri."
+        body="30 menit lewat Zoom, gratis. Kita petakan jalur organik dan iklan Anda, lalu di mana calon pembeli hilang."
         photo={ctaPhoto}
       >
-        <button
-          onClick={scrollToLayanan}
-          className="flex items-center justify-center gap-2 rounded-none bg-accent px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-ink-900 transition hover:bg-accent-300"
+        <a
+          href={TAUTAN_AUDIT_GTM}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-2 rounded-none bg-amber-400 px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-slate-950 transition hover:bg-amber-300"
         >
-          Mulai Dominasi Sekarang <ArrowRight className="h-4 w-4" />
-        </button>
+          {LABEL_AUDIT_GTM} <ArrowRight className="h-4 w-4" />
+        </a>
+        <a
+          href={TAUTAN_MINTA_DEMO}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-none border border-white/30 bg-white/5 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/10"
+        >
+          {LABEL_MINTA_DEMO}
+        </a>
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="rounded-none border border-white/30 bg-white/5 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/10"
@@ -661,10 +690,10 @@ const PILLARS = [
     label: 'Pilar Pertahanan',
     title: 'Integritas & Audit',
     items: [
-      { icon: <Binary className="h-5 w-5" />, title: 'Audit Teknis', desc: 'Temukan dan musnahkan error 404, masalah rendering JS, dan hambatan indexing yang mencegah Google merayapi situs Anda.' },
+      { icon: <Binary className="h-5 w-5" />, title: 'Audit Teknis', desc: 'Temukan dan perbaiki error 404, masalah rendering JS, dan hambatan indexing yang mencegah Google merayapi situs Anda.' },
       { icon: <ShieldCheck className="h-5 w-5" />, title: 'Integritas Konten', desc: 'Pindai plagiarisme, keyword stuffing, dan thin content yang membuat algoritma Google menghukum ranking Anda.' },
       { icon: <Unlink className="h-5 w-5" />, title: 'Audit Link', desc: 'Deteksi backlink toxic dan spam yang diam-diam menyabotase otoritas domain Anda dari belakang.' },
-      { icon: <Trash2 className="h-5 w-5" />, title: 'Detektor Kanibal', desc: 'Hentikan halaman web Anda sendiri saling membunuh dan berebut ranking untuk kata kunci yang sama.' },
+      { icon: <Trash2 className="h-5 w-5" />, title: 'Detektor Kanibal', desc: 'Cegah halaman-halaman Anda sendiri saling berebut ranking untuk kata kunci yang sama.' },
     ],
   },
   {
@@ -673,16 +702,16 @@ const PILLARS = [
     items: [
       { icon: <Search className="h-5 w-5" />, title: 'Riset Kata Kunci', desc: "Intai kata kunci 'Golden Ratio' ber-volume tinggi dengan persaingan rendah yang diabaikan kompetitor Anda." },
       { icon: <TrendingUp className="h-5 w-5" />, title: 'Analitik Trending', desc: 'Tunggangi gelombang pencarian real-time dan jadilah yang pertama mempublikasikan tren sebelum pasar menyadarinya.' },
-      { icon: <MapPin className="h-5 w-5" />, title: 'Sovereign Lokal', desc: "Dominasi Google Maps dan pencarian 'Near Me' untuk memonopoli pelanggan di wilayah geografis Anda." },
+      { icon: <MapPin className="h-5 w-5" />, title: 'SEO Lokal', desc: "Tampil di Google Maps dan pencarian 'terdekat' saat calon pembeli di wilayah Anda sedang mencari." },
     ],
   },
   {
-    label: 'Pilar Penyerangan',
+    label: 'Pilar Pertumbuhan',
     title: 'Ekspansi & Konversi',
     items: [
-      { icon: <Compass className="h-5 w-5" />, title: 'Arsitektur Funnel', desc: 'Bedah dan tambal kebocoran di halaman konversi Anda. Ubah trafik dingin menjadi pembeli fanatik.' },
-      { icon: <Bot className="h-5 w-5" />, title: 'AEO & GEO Readiness', desc: 'Injeksi sinyal AI ke dalam konten agar ChatGPT, Gemini, dan Siri selalu merekomendasikan produk Anda.' },
-      { icon: <Layers className="h-5 w-5" />, title: 'Pilar Builder', desc: 'Bangun kluster topik raksasa (Silo Architecture) yang memaksa Google memandang Anda sebagai otoritas absolut.' },
+      { icon: <Compass className="h-5 w-5" />, title: 'Arsitektur Funnel', desc: 'Temukan dan tambal kebocoran di halaman konversi Anda, dari kunjungan pertama sampai kontak masuk.' },
+      { icon: <Bot className="h-5 w-5" />, title: 'AEO & GEO Readiness', desc: 'Tambahkan data terstruktur dan jawaban yang jelas agar mesin jawab AI seperti ChatGPT mudah mengutip produk Anda.' },
+      { icon: <Layers className="h-5 w-5" />, title: 'Pilar Builder', desc: 'Bangun kluster topik (Silo Architecture) supaya Google membaca website Anda sebagai rujukan yang utuh.' },
     ],
   },
 ];

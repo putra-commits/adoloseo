@@ -236,7 +236,7 @@ export async function seedDummyAudit(): Promise<StoredAuditRecord> {
       {
         id: 'LOC-01',
         title_id: 'Tidak Ditemukan Tombol Chat WhatsApp Langsung',
-        why_it_matters_id: '90% pasien klinik di Indonesia memilih booking jadwal via WhatsApp daripada formulir web.',
+        why_it_matters_id: 'Banyak pasien klinik lebih memilih membuat janji lewat WhatsApp daripada mengisi formulir web.',
         how_to_fix_id: 'Pasang floating WhatsApp CTA button di pojok kanan bawah dengan link wa.me.',
         impact: 'H',
         effort: 'S',

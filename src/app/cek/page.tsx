@@ -351,7 +351,7 @@ export default function CekPage() {
                   <div>
                     <h3 className="text-sm font-black text-white mb-2">Mau skor lebih tinggi?</h3>
                     <p className="text-xs text-zinc-400 mb-4">
-                      Dapatkan laporan lengkap + monitoring mingguan + rank tracker. Mulai dari Rp 499rb/bln.
+                      Dapatkan laporan lengkap + monitoring mingguan + rank tracker. Biaya disusun setelah Audit GTM gratis 30 menit.
                     </p>
                   </div>
                   <div className="space-y-2">

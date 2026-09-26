@@ -29,6 +29,8 @@ export type Produk = {
 
 /** Produk keluarga Adolo. Urutannya mengikuti adolo.id. */
 export const PRODUK_ADOLO: Produk[] = [
+  // AdoloGTM = produk panglima (keputusan Putu 26 Sep 2026) — tampil pertama.
+  { nama: 'AdoloGTM', url: 'https://gtm.adolo.id', status: 'production' },
   { nama: 'AdoloChat', url: 'https://chat.adolo.id', status: 'production' },
   { nama: 'AdoloCRM', url: 'https://crm.adolo.id', status: 'production' },
   { nama: 'AdoloFlow', url: 'https://flow.adolo.id', status: 'production' },

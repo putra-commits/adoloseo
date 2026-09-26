@@ -23,11 +23,11 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://seo.adolo.id'),
   title: { default: 'AdoloSEO — Arsitektur Pendapatan & Intelijen SEO', template: '%s | AdoloSEO' },
-  description: 'Transformasi website Anda menjadi aset kedaulatan digital. Audit AEO, GEO, dan optimasi konversi enterprise untuk dominasi pasar Indonesia.',
+  description: 'Audit SEO, AEO, dan GEO gratis: lihat di mana website Anda bocor. AdoloSEO adalah jalur organik AdoloGTM — mulai dengan Audit GTM gratis 30 menit.',
   keywords: ['audit AEO', 'optimasi GEO', 'AdoloSEO', 'arsitektur konversi', 'profit SEO', 'intelijen pasar'],
   openGraph: {
     title: 'AdoloSEO — Arsitektur Pendapatan & Intelijen SEO',
-    description: 'Transformasi website Anda menjadi aset kedaulatan digital. Audit AEO, GEO, dan optimasi konversi.',
+    description: 'Audit SEO, AEO, dan GEO gratis: lihat di mana website Anda bocor. Jalur organik AdoloGTM.',
     url: 'https://seo.adolo.id',
     siteName: 'AdoloSEO',
     images: [{ url: '/brand/og-adoloseo-1200x630.png', width: 1200, height: 630, alt: 'AdoloSEO — Arsitektur Pendapatan & Intelijen SEO' }],
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'AdoloSEO — Arsitektur Pendapatan & Intelijen SEO',
-    description: 'Transformasi website Anda menjadi aset kedaulatan digital.',
+    description: 'Audit SEO, AEO, dan GEO gratis — jalur organik AdoloGTM.',
     images: ['/brand/og-adoloseo-1200x630.png'],
   },
 };

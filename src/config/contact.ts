@@ -46,3 +46,16 @@ export function waLink(message: string): string {
  * baru ubah nilai di bawah jadi true.
  */
 export const PEMBAYARAN_ONLINE_AKTIF = false;
+
+/**
+ * CTA publik ke AdoloGTM (keputusan Putu 26 Sep 2026: tanpa harga publik;
+ * CTA "Audit GTM 30 menit" / "Minta demo" ke gtm.adolo.id). UTM supaya
+ * kunjungan dari seo.adolo.id terbaca di atribusi kanal AdoloGTM.
+ */
+const GTM_URL = 'https://gtm.adolo.id';
+const GTM_UTM = 'utm_source=seo.adolo.id&utm_medium=landing';
+export const LABEL_AUDIT_GTM = 'Audit GTM 30 menit';
+export const LABEL_MINTA_DEMO = 'Minta demo';
+export const TAUTAN_GTM = `${GTM_URL}/?${GTM_UTM}&utm_campaign=adologtm`;
+export const TAUTAN_AUDIT_GTM = `${GTM_URL}/?${GTM_UTM}&utm_campaign=audit-gtm`;
+export const TAUTAN_MINTA_DEMO = `${GTM_URL}/coba/war-room?${GTM_UTM}&utm_campaign=minta-demo`;

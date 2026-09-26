@@ -10,7 +10,7 @@ import { waLink } from '@/config/contact';
 export default function WhatsAppFloat() {
   const handleWhatsAppClick = () => {
     window.open(
-      waLink('Halo Tim AdoloSEO, saya tertarik dengan Arsitektur Konversi dan ingin mendiskusikan potensi dominasi pasar untuk bisnis saya.'),
+      waLink('Halo Tim AdoloSEO, saya tertarik dengan Arsitektur Konversi dan ingin mendiskusikan jalur organik untuk bisnis saya.'),
       '_blank',
       'noopener,noreferrer',
     );
